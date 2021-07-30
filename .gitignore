@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /asdas
+/tmpnodejsnpm-cache
 /.pnp
 .pnp.js
 

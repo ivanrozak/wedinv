@@ -1,38 +1,84 @@
-.App {
+.botnav {
+  overflow: hidden;
+  background-color: #ffff;
+  box-shadow: 0px -6px 20px rgba(175, 175, 175, 0.25);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  border-radius: 30px 30px 0px 0px;
+  padding: 20px;
+}
+
+/* import Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+/* font-family: 'Dancing Script', cursive; */
+
+* {
+  color: #575c4c;
+  font-size: 14px;
+  font-family: 'Raleway';
+}
+
+.bold {
+  font-weight: bold;
+}
+.light {
+  font-weight: lighter;
+}
+.f24 {
+  font-size: 24px;
+}
+.f48 {
+  font-size: 48px;
+}
+
+/* font selector */
+.poppins {
+  font-family: 'Poppins';
+}
+.sacramento {
+  font-family: 'Sacramento';
+}
+
+.dancing24 {
+  font-family: 'Dancing Script';
+  font-size: 24px;
+}
+.dancing26 {
+  font-family: 'Dancing Script';
+  font-size: 26px;
+}
+.content {
+  background-image: url(./assets/img/background.jpg);
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+.homepage {
+  position: relative;
   text-align: center;
+  width: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.homepage-title {
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.couples {
+  position: relative;
+  text-align: center;
+  /* width: 100%; */
+  padding: 40px 0px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.lines {
+  width: 105px;
+  height: 0px;
+  border: 0.5px solid #575c4c;
 }
