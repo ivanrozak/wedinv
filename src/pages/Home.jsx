@@ -1,10 +1,14 @@
 import React from 'react';
 // import { AccessAlarm, ThreeDRotation, HomeOutlined } from '@material-ui/icons';
+import NavBar from '../components/Navbar';
 import Hero from '../assets/img/hero.jpg';
 import Header from '../assets/img/header.png';
 import Countdown from '../components/Countdown';
 import GMap from '../components/Gmap';
 import Galleries from '../components/Galleries';
+import Comments from '../components/Comments';
+import Protocol from '../assets/img/protokol.png';
+import QRcode from '../assets/img/qrcode.jpg';
 
 export default function Home() {
   return (
@@ -100,21 +104,50 @@ export default function Home() {
                 Jakarta
               </div>
             </div>
-            <div class='dancing26 mt-5'>Our Happy Moment</div>
-            <div class=' mb-4'>will be held on :</div>
-            <div class='px-4 py-2 m-auto'>
+            <div className='dancing26 mt-5'>Our Happy Moment</div>
+            <div className=' mb-4'>will be held on :</div>
+            <div className='px-4 py-2 m-auto'>
               <Countdown />
             </div>
           </div>
         </div>
-        <div className='gmaps'>
+        <div className='gmaps text-center'>
           <GMap />
+          <button className='btn btn-secondary my-4'>Navigasi Map</button>
         </div>
         <div className='galleries text-center'>
-          <div class='dancing26 mt-5'>Couple Galleries</div>
+          <div className='dancing26 mt-5'>Couple Galleries</div>
           <Galleries />
         </div>
+        <div className='health text-center mx-5'>
+          <div className='dancing26 mt-5 mb-2'>Protokol Kesehatan</div>
+          <div className='bold'>
+            Tanpa mengurangi rasa hormat, sesuai dengan peraturan pemerintah,
+            para tamu undangan tetap wajib menjalankan protokol kesehatan
+            sebagaimana mestinya.
+            <br />
+            <br />
+            Pastikan kondisi badan dalam keadaan sehat saat menghadiri undangan.
+            <br /> Terima kasih atas kerjasama Bapak/Ibu/Saudara/i.
+          </div>
+          <img src={Protocol} alt='' />
+        </div>
+        <div className='gift text-center mx-5'>
+          <div className='dancing26 mt-5'>Wedding Gift</div>
+          <div className='bold mt-3'>
+            Congratulate them through online giving. You may be able to do so
+            through the BCA account as follow :
+          </div>
+          <div className='bold my-4'>NAMA PEMILIK REK</div>
+          <img src={QRcode} alt='' />
+          <div className='bold my-2'>1234xxxxxxxxx</div>
+        </div>
+        <div className='comment mx-4 text-center'>
+          <div className='dancing26 my-5'>Wishes & Comment</div>
+          <Comments />
+        </div>
       </div>
+      <NavBar />
       {/* <div className='botnav d-flex justify-content-between'>
         <HomeOutlined />
         <HomeOutlined />
