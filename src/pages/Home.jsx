@@ -7,6 +7,7 @@ import Countdown from '../components/Countdown';
 import GMap from '../components/Gmap';
 import Galleries from '../components/Galleries';
 import Comments from '../components/Comments';
+import Musicc from '../components/Music';
 import Protocol from '../assets/img/protokol.png';
 import QRcode from '../assets/img/qrcode.jpg';
 
@@ -143,8 +144,11 @@ export default function Home() {
           <div className='bold my-2'>1234xxxxxxxxx</div>
         </div>
         <div className='comment mx-4 text-center'>
-          <div className='dancing26 my-5'>Wishes & Comment</div>
+          <div className='dancing26 my-5'>Wishes & Comments</div>
           <Comments />
+        </div>
+        <div className='fixed-top ms-2' style={{ marginTop: '50%' }}>
+          <Musicc />
         </div>
       </div>
       <NavBar />
