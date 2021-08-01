@@ -9,14 +9,13 @@ export default function Music(
   handleSongLoading,
   handleSongFinishedPlaying
 ) {
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   return (
     <div>
       <IconButton
         onClick={() => setIsPlaying(!isPlaying)}
         color='primary'
-        aria-label='upload picture'
         component='span'
       >
         {!isPlaying ? <MusicOff /> : <MusicNote />}
@@ -24,7 +23,7 @@ export default function Music(
       <Sound
         url={Badguy}
         playStatus={isPlaying ? Sound.status.PLAYING : Sound.status.STOPPED}
-        playFromPosition={3000}
+        playFromPosition={5000}
         onLoading={handleSongLoading}
         onPlaying={handleSongPlaying}
         onFinishedPlaying={handleSongFinishedPlaying}

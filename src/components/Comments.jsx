@@ -24,7 +24,6 @@ export default function MultilineTextFields() {
       <TextField
         id='outlined-multiline-static'
         multiline
-        // rows={2}
         value={chat}
         onChange={handleChange}
         placeholder='Input your comment here'

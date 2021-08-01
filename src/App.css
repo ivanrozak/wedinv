@@ -55,7 +55,7 @@
   font-size: 26px;
 }
 .content {
-  background-image: url(./assets/img/background.jpg);
+  /* background-image: url(./assets/img/background.jpg); */
   background-repeat: repeat-y;
   background-size: 100%;
   padding-bottom: 100px;

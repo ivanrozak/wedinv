@@ -1,5 +1,4 @@
 import React from 'react';
-// import { AccessAlarm, ThreeDRotation, HomeOutlined } from '@material-ui/icons';
 import NavBar from '../components/Navbar';
 import Hero from '../assets/img/hero.jpg';
 import Header from '../assets/img/header.png';
@@ -147,17 +146,11 @@ export default function Home() {
           <div className='dancing26 my-5'>Wishes & Comments</div>
           <Comments />
         </div>
-        <div className='fixed-top ms-2' style={{ marginTop: '50%' }}>
+        <div className='fixed-top ms-2' style={{ marginTop: '20vh' }}>
           <Musicc />
         </div>
       </div>
       <NavBar />
-      {/* <div className='botnav d-flex justify-content-between'>
-        <HomeOutlined />
-        <HomeOutlined />
-        <AccessAlarm />
-        <ThreeDRotation />
-      </div> */}
     </>
   );
 }
