@@ -146,7 +146,10 @@ export default function Home() {
           <div className='dancing26 my-5'>Wishes & Comments</div>
           <Comments />
         </div>
-        <div className='fixed-top ms-2' style={{ marginTop: '20vh' }}>
+        <div
+          className='fixed-top ms-2'
+          style={{ marginTop: '20vh', opacity: 0.7 }}
+        >
           <Musicc />
         </div>
       </div>
