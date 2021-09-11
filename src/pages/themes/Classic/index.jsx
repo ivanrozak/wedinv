@@ -26,7 +26,7 @@ function Classic() {
   const executeScroll2 = () => {
     myRef2.current.scrollIntoView();
   };
-  const dataInit = useSelector((state) => state.global.dataState.resultData);
+  // const dataInit = useSelector((state) => state.global.dataState.resultData);
 
   const Navbar = () => {
     return (
