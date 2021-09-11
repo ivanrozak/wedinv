@@ -16,6 +16,7 @@ import Hero from './Components/Hero';
 import Event from './Components/Event';
 import Map from './Components/Map';
 import './index.scss';
+import { Fade } from 'react-reveal';
 
 function Classic() {
   const myRef = useRef(null);
@@ -66,15 +67,45 @@ function Classic() {
   return (
     <div>
       <div ref={myRef}>
-        <Hero />
+        <Fade bottom big>
+          <Hero />
+        </Fade>
       </div>
       <div ref={myRef2}>
-        <Event />
+        <Fade bottom big>
+          <Event />
+        </Fade>
       </div>
       <div>
-        <Map />
+        <Fade bottom big>
+          <Map />
+        </Fade>
       </div>
-      <div>Hello worldnote</div>
+      <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed voluptate
+        quidem maiores. Quidem quis quia voluptatum eum, laborum nihil corporis
+        perspiciatis enim ducimus fugiat dolore voluptates aut at sequi optio
+        dolor cupiditate distinctio voluptatibus eos autem dolores sunt veniam!
+        Ducimus atque debitis harum pariatur distinctio quos magnam dolores
+        ratione sit esse dolorem molestias ut autem corrupti doloremque cumque
+        modi omnis laboriosam a, velit nam tempore repellat inventore doloribus!
+        Accusantium sunt nemo magnam blanditiis. Quis a officiis blanditiis
+        placeat dolore pariatur praesentium, fugiat atque incidunt doloremque
+        magnam nostrum laudantium fuga odio esse iste. Sapiente harum voluptate
+        consequatur dolor blanditiis numquam veniam dolore nihil incidunt
+        aliquam rem sint magni amet, obcaecati voluptatem, doloremque
+        consectetur nemo assumenda iusto! Assumenda cupiditate, harum corrupti
+        quos officia minus dolorum incidunt quisquam, dolorem velit animi
+        consectetur? Fugit autem commodi, exercitationem odio et doloremque
+        porro ratione. Quae, maxime, magni omnis odio eveniet deleniti dolores,
+        asperiores hic nobis doloribus aut temporibus reprehenderit molestiae!
+        Quidem, obcaecati architecto quis eos dolorem nesciunt deserunt vel
+        omnis repellat quos consectetur adipisci recusandae vero. Alias,
+        veritatis provident non facilis, dolores minima similique animi deleniti
+        blanditiis, enim exercitationem vero vitae accusamus dignissimos officia
+        asperiores ipsa nemo dolor modi quo distinctio quam voluptatem
+        voluptatibus dicta! Sequi?
+      </div>
       <Navbar />
     </div>
   );
