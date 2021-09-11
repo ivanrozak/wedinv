@@ -32,7 +32,7 @@ function Event() {
             <div className='mt-3 bold' style={{ letterSpacing: '0.105em' }}>
               {moment(data.tanggal_akad).format('MMMM').toUpperCase()}
             </div>
-            <div className=' px-3 d-flex justify-content-center align-items-center'>
+            <div className='d-flex justify-content-center align-items-center'>
               <div className='text-center'>
                 <div className='lines'></div>
                 <div className='py-2 bold' style={{ letterSpacing: '0.105em' }}>
@@ -70,7 +70,7 @@ function Event() {
             <div className='mt-3 bold' style={{ letterSpacing: '0.105em' }}>
               {moment(data.tanggal_resepsi).format('MMMM').toUpperCase()}
             </div>
-            <div className=' px-3 d-flex justify-content-center align-items-center'>
+            <div className='d-flex justify-content-center align-items-center'>
               <div className='text-center'>
                 <div className='lines'></div>
                 <div className='py-2 bold' style={{ letterSpacing: '0.105em' }}>

@@ -23,11 +23,11 @@ body {
   /* overflow: hidden; */
   overflow-y: auto;
   width: 100%;
-  height: 390px;
+  height: 360px;
 }
 .img-grid {
   padding: 1px;
-  width: 130px;
-  height: 130px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
 }

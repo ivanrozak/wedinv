@@ -1,7 +1,9 @@
 .top-of-img {
-  position: absolute;
+  position: relative;
   width: 100%;
-  top: 50%;
+  padding-top: 50vh;
+  background-image: url('./assets/hero.jpg');
+  height: 100vh;
 }
 
 .flip-vertical {

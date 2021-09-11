@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from '../../../../assets/logokoendangin.svg';
-import HeroImage from '../assets/hero.jpg';
+// import HeroImage from '../assets/hero.jpg';
 
 function Hero() {
   return (
@@ -15,7 +15,6 @@ function Hero() {
           02 JANUARI 2022
         </div>
       </div>
-      <img className='w-100' src={HeroImage} alt='' />
     </div>
   );
 }
