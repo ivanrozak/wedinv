@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Texture from '../assets/batik1.png';
 import { useSelector } from 'react-redux';
 import moment from 'moment';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import Map from './Map';
 
 function Event() {
+  const [modal, setModal] = useState(false);
+  const toggle = () => setModal(!modal);
   const data = useSelector((state) => state.global.dataState.resultData);
+  const closeBtn = (
+    <Button outline color='secondary' onClick={toggle}>
+      X
+    </Button>
+  );
   return (
     <div className='bg-white primary'>
       <img className='flip-vertical w-100 mb-4' src={Texture} alt='' />
@@ -62,9 +71,7 @@ function Event() {
               {data.kota_akad}
             </div>
           </div>
-          <button className='btn btn-secondary my-4'>
-            View Live Streaming
-          </button>
+
           <div>
             <div className='oleo f32'>Resepsi</div>
             <div className='mt-3 bold' style={{ letterSpacing: '0.105em' }}>
@@ -99,10 +106,32 @@ function Event() {
               <br />
               {data.kota_resepsi}
             </div>
+            <button className='btn btn-secondary my-4' onClick={toggle}>
+              Lihat Lokasi
+            </button>
           </div>
         </div>
       </div>
       <img className='w-100 mt-4' src={Texture} alt='' />
+      <Modal isOpen={modal} toggle={toggle}>
+        <ModalHeader toggle={toggle} close={closeBtn}>
+          Lokasi Acara
+        </ModalHeader>
+        <ModalBody>
+          <Map />
+        </ModalBody>
+        <ModalFooter className='justify-content-center'>
+          <Button color='primary' style={{ color: 'white' }} onClick={toggle}>
+            Menuju Lokasi Akad
+          </Button>
+          <br />
+          <a href='https://goo.gl/maps/omFhPoeBtc5Fj6H6A'>
+            <Button color='primary' style={{ color: 'white' }} onClick={toggle}>
+              Menuju Lokasi Resepsi
+            </Button>
+          </a>
+        </ModalFooter>
+      </Modal>
     </div>
   );
 }

@@ -3,15 +3,14 @@ import React, { useRef, useState } from 'react';
 import {
   HomeRounded,
   FavoriteRounded,
-  VolumeOffRounded,
-  VolumeUpRounded,
   PhotoLibraryRounded,
   ForumRounded,
+  Pause,
+  PlayArrow,
 } from '@material-ui/icons';
 import IconButton from '@material-ui/core/IconButton';
 import Hero from './Components/Hero';
 import Event from './Components/Event';
-import Map from './Components/Map';
 import Music from './Components/Music';
 import Galleries from '../../../components/Galleries';
 import './index.scss';
@@ -56,11 +55,7 @@ function Classic() {
           }}
           onClick={playMusic}
         >
-          {!music ? (
-            <VolumeOffRounded style={{ color: 'red' }} />
-          ) : (
-            <VolumeUpRounded />
-          )}
+          {!music ? <Pause /> : <PlayArrow />}
         </IconButton>
         <IconButton onClick={scrollToGalleries}>
           <PhotoLibraryRounded />
@@ -82,9 +77,6 @@ function Classic() {
       <div ref={favouriteRef}>
         <Fade bottom>
           <Event />
-        </Fade>
-        <Fade bottom>
-          <Map />
         </Fade>
       </div>
       <div ref={galleriesRef}>

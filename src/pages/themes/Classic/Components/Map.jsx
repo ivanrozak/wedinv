@@ -30,7 +30,7 @@ class Map extends Component {
 
   render() {
     return (
-      <div className='container bg-white py-2'>
+      <div className='container  py-2'>
         <div style={{ height: '300px', width: '100%' }}>
           <MapWithAMarker
             googleMapURL='https://maps.googleapis.com/maps/api/js?key=AIzaSyAUdx_YdrwbdjQtCLnqK9U2SyIFj5IrgdM&v=3.exp&libraries=geometry,drawing,places'
@@ -40,9 +40,9 @@ class Map extends Component {
             props={this.props.center}
           />
         </div>
-        <a href='https://goo.gl/maps/omFhPoeBtc5Fj6H6A'>
+        {/* <a href='https://goo.gl/maps/omFhPoeBtc5Fj6H6A'>
           <button>Clicked</button>
-        </a>
+        </a> */}
       </div>
     );
   }
