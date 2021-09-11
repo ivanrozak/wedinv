@@ -1,0 +1,20 @@
+.top-of-img {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+}
+
+.flip-vertical {
+  transform: rotateX(180deg);
+}
+
+.bg-white {
+  background-image: url('./assets/background.jpg');
+}
+
+.primary {
+  color: #8a4332 !important;
+}
+.secondary {
+  color: white !important;
+}

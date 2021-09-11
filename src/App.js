@@ -1,16 +1,22 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
-import Home from './pages/Home';
-import Welcome from './pages/Welcome';
-import './App.css';
+import OpenTheme from './pages/OpenTheme';
+import Main from './pages';
+import moment from 'moment';
+
+// import Index from './pages';
+import './App.scss';
 
 export default function App() {
+  const idLocale = require('moment/locale/id');
+  moment.locale('id', idLocale);
   return (
     <BrowserRouter>
       <Switch>
-        <Route path='/home' exact component={Home} />
-        <Route path='/:name?' exact component={Welcome} />
+        <Route path='/home' exact component={Main} />
+        <Route path='/:name?' exact component={OpenTheme} />
+        {/* <Route path='/' exact component={OpenTheme} /> */}
       </Switch>
     </BrowserRouter>
   );

@@ -16,28 +16,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
 
 /* font-family: 'Dancing Script', cursive; */
 
 * {
-  color: #575c4c;
+  // color: #575c4c;
   font-size: 14px;
-  font-family: 'Raleway';
+  font-family: 'Poppins';
 }
 
 .bold {
   font-weight: bold;
 }
+.semibold {
+  font-weight: 500;
+}
 .light {
   font-weight: lighter;
 }
+
+.f16 {
+  font-size: 16px;
+}
+.f18 {
+  font-size: 18px;
+}
+.f20 {
+  font-size: 20px;
+}
+.f22 {
+  font-size: 22px;
+}
 .f24 {
   font-size: 24px;
+}
+.f32 {
+  font-size: 32px;
+}
+.f36 {
+  font-size: 36px;
 }
 .f48 {
   font-size: 48px;
 }
 
+.mn-1 {
+  margin-top: -0.25rem;
+}
+.mn-2 {
+  margin-top: -0.5rem;
+}
+.mn-3 {
+  margin-top: -0.75rem;
+}
+.mn-4 {
+  margin-top: -0.1rem;
+}
+.mn-5 {
+  margin-top: -0.125rem;
+}
 /* font selector */
 .poppins {
   font-family: 'Poppins';
@@ -53,6 +91,9 @@
 .dancing26 {
   font-family: 'Dancing Script';
   font-size: 26px;
+}
+.oleo {
+  font-family: 'Oleo Script', cursive;
 }
 .content {
   /* background-image: url(./assets/img/background.jpg); */
@@ -81,5 +122,45 @@
 .lines {
   width: 105px;
   height: 0px;
-  border: 0.5px solid #575c4c;
+  border: 0.5px solid;
+}
+
+.belakang {
+  position: relative;
+  height: 87vh;
+  font-family: 'Poppins' !important;
+  border-radius: 0px 0px 30px 30px;
+  background-image: linear-gradient(#87231a 7%, #d8c1ab);
+  z-index: 2;
+}
+.img-hero {
+  position: absolute;
+  width: 74%;
+  bottom: 0px;
+  left: 13%;
+}
+
+.color-white {
+  color: white;
+}
+
+.btn-top {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin-top: -20px;
+  z-index: 3;
+}
+.bottom-bg {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  * {
+    max-width: 576px;
+    text-align: center;
+  }
 }
