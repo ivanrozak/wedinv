@@ -6,22 +6,14 @@ import Pic2 from '../assets/img/img1.jpg';
 
 // import styles
 import 'lightgallery/css/lightgallery.css';
-import 'lightgallery/css/lg-zoom.css';
-import 'lightgallery/css/lg-thumbnail.css';
-
-// If you want you can use SCSS instead of css
 import 'lightgallery/scss/lightgallery.scss';
-import 'lightgallery/scss/lg-zoom.scss';
-import 'lightgallery/scss/lg-fullscreen.scss';
-import 'lightgallery/scss/lg-share.scss';
-import 'lightgallery/scss/lg-pager.scss';
+import 'lightgallery/css/lightgallery-bundle.css';
+import 'lightgallery/scss/lightgallery-bundle.scss';
 
 // import plugins if you need
-// import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
-import fullscreen from 'lightgallery/plugins/fullscreen';
-import share from 'lightgallery/plugins/share';
-import pager from 'lightgallery/plugins/pager';
+import lgFullscreen from 'lightgallery/plugins/fullscreen';
+import lgPager from 'lightgallery/plugins/pager';
 
 export default function Gallery() {
   const onInit = () => {
@@ -32,7 +24,7 @@ export default function Gallery() {
       <LightGallery
         onInit={onInit}
         speed={500}
-        plugins={[lgZoom, fullscreen, share, pager]}
+        plugins={[lgZoom, lgPager, lgFullscreen]}
         className='m-5'
       >
         <a className='img-a' href={Pic}>
@@ -61,9 +53,6 @@ export default function Gallery() {
         </a>
         <a className='img-a' href={Pic}>
           <img className='img-grid' src={Pic} alt='' />
-        </a>
-        <a className='img-a' href={Pic2}>
-          <img className='img-grid' src={Pic2} alt='' />
         </a>
       </LightGallery>
     </div>

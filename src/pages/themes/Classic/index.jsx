@@ -13,6 +13,7 @@ import Hero from './Components/Hero';
 import Event from './Components/Event';
 import Music from './Components/Music';
 import Galleries from '../../../components/Galleries';
+import Comment from './Components/Comments';
 import './index.scss';
 import { Fade } from 'react-reveal';
 
@@ -84,8 +85,18 @@ function Classic() {
           <Galleries />
         </Fade>
       </div>
+      <div className='p-2'>
+        <iframe
+          className='w-100'
+          src='https://www.youtube.com/embed/FgN4ieKQKw8'
+          title='YouTube video player'
+          frameborder='0'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+          allowfullscreen
+        ></iframe>
+      </div>
       <div ref={commentRef}>
-        <h1>Comments</h1>
+        <Comment />
       </div>
       <Music props={music} />
       <div className='mt-5'>
