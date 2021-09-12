@@ -4,6 +4,9 @@ import { useSelector } from 'react-redux';
 import moment from 'moment';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import Map from './Map';
+import Car1 from '../assets/img/gambar1.png';
+import Car2 from '../assets/img/gambar2.png';
+import Countdown from '../../../../components/Countdown';
 
 function Event() {
   const [modal, setModal] = useState(false);
@@ -20,7 +23,7 @@ function Event() {
       <div className='text-center'>
         <div className='f24 oleo bold'>We are</div>
         <div className='f24 oleo bold mn-3'>married!</div>
-        <div className='px-5 mt-3'>
+        <div className='px-5 mt-3 mb-5'>
           “Dan diantara tanda-tanda kebesaran-Nya ialah Dia menciptakan
           pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung
           dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa
@@ -28,11 +31,12 @@ function Event() {
           <br />
           Ar-Rum ayat 21
         </div>
-        <div className='oleo f24 mt-4'>{data.nama_wanita}</div>
+        <img className='img-rounded' src={Car2} alt='' />
+        <div className='oleo f24 mt-2'>{data.nama_wanita}</div>
         <div className='mt-1'>{`Putri dari Bapak ${data.ayah_wanita} dan`}</div>
         <div>{`Ibu ${data.ibu_wanita}`}</div>
-
-        <div className='oleo f24 mt-4'>{data.nama_pria}</div>
+        <img className='img-rounded mt-4' src={Car1} alt='' />
+        <div className='oleo f24 mt-2'>{data.nama_pria}</div>
         <div className='mt-1'>{`Putra dari Bapak ${data.ayah_pria} dan`}</div>
         <div>{`Ibu ${data.ibu_pria}`}</div>
         <div className='section mt-5'>
@@ -109,6 +113,17 @@ function Event() {
             <button className='btn btn-secondary my-4' onClick={toggle}>
               Lihat Lokasi
             </button>
+          </div>
+          <div className='oleo f32'>Our Happy Moment</div>
+          <div className='f20 mn-2'>Countdown</div>
+          <div
+            className='mx-3 mt-2 px-2'
+            style={{
+              border: '1px solid #8a4332',
+              borderRadius: '15px',
+            }}
+          >
+            <Countdown />
           </div>
         </div>
       </div>

@@ -14,6 +14,8 @@ import Event from './Components/Event';
 import Music from './Components/Music';
 import Galleries from '../../../components/Galleries';
 import Comment from './Components/Comments';
+import Prokes from './Components/Prokes';
+import Footer from './Components/Footer';
 import './index.scss';
 import { Fade } from 'react-reveal';
 
@@ -82,6 +84,7 @@ function Classic() {
       </div>
       <div ref={galleriesRef}>
         <Fade bottom>
+          <div className='oleo text-center f24 mt-4'>Couple Galleries</div>
           <Galleries />
         </Fade>
       </div>
@@ -90,19 +93,17 @@ function Classic() {
           className='w-100'
           src='https://www.youtube.com/embed/FgN4ieKQKw8'
           title='YouTube video player'
-          frameborder='0'
+          frameBorder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-          allowfullscreen
+          allowFullscreen
         ></iframe>
       </div>
       <div ref={commentRef}>
         <Comment />
       </div>
+      <Prokes />
+      <Footer />
       <Music props={music} />
-      <div className='mt-5'>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis sed odio
-        excepturi a labore ex doloremque harum, expedita laboriosam. Harum?
-      </div>
       <Navbar />
     </div>
   );

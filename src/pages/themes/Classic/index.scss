@@ -20,3 +20,11 @@
 .secondary {
   color: white !important;
 }
+
+.img-rounded {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 4px grey;
+  object-fit: cover;
+}

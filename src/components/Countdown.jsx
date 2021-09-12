@@ -1,6 +1,7 @@
 import React from 'react';
 import { CountdownCircleTimer } from 'react-countdown-circle-timer';
 import './countdown.css';
+import { useSelector } from 'react-redux';
 
 const minuteSeconds = 60;
 const hourSeconds = 3600;
@@ -8,8 +9,8 @@ const daySeconds = 86400;
 
 const timerProps = {
   isPlaying: true,
-  size: 90,
-  strokeWidth: 6,
+  size: 80,
+  strokeWidth: 0,
 };
 
 const renderTime = (dimension, time) => {
@@ -27,8 +28,13 @@ const getTimeHours = (time) => ((time % daySeconds) / hourSeconds) | 0;
 const getTimeDays = (time) => (time / daySeconds) | 0;
 
 export default function Countdown() {
+  const data = useSelector(
+    (state) => state.global.dataState.resultData.tanggal_resepsi
+  );
+  const newData = Date.parse(data);
   const stratTime = Date.now() / 1000; // use UNIX timestamp in seconds
-  const endTime = Date.parse('21 Aug 2021 00:12:00 GMT') / 1000; // use UNIX timestamp in seconds
+  // const endTime = Date.parse('21 Dec 2021 00:12:00 GMT') / 1000; // use UNIX timestamp in seconds
+  const endTime = Date.parse(data) / 1000; // use UNIX timestamp in seconds
   // const endTime = stratTime + 243248; // use UNIX timestamp in seconds
 
   const remainingTime = endTime - stratTime;
@@ -37,9 +43,10 @@ export default function Countdown() {
 
   return (
     <div className='App'>
+      {console.log(data, newData)}
       <CountdownCircleTimer
         {...timerProps}
-        colors={[['#7E2E84']]}
+        colors={[['#00000']]}
         duration={daysDuration}
         initialRemainingTime={remainingTime}
       >
@@ -49,7 +56,7 @@ export default function Countdown() {
       </CountdownCircleTimer>
       <CountdownCircleTimer
         {...timerProps}
-        colors={[['#D14081']]}
+        colors={[['#00000']]}
         duration={daySeconds}
         initialRemainingTime={remainingTime % daySeconds}
         onComplete={(totalElapsedTime) => [
@@ -62,7 +69,7 @@ export default function Countdown() {
       </CountdownCircleTimer>
       <CountdownCircleTimer
         {...timerProps}
-        colors={[['#EF798A']]}
+        colors={[['#00000']]}
         duration={hourSeconds}
         initialRemainingTime={remainingTime % hourSeconds}
         onComplete={(totalElapsedTime) => [
@@ -75,7 +82,7 @@ export default function Countdown() {
       </CountdownCircleTimer>
       <CountdownCircleTimer
         {...timerProps}
-        colors={[['#218380']]}
+        colors={[['#00000']]}
         duration={minuteSeconds}
         initialRemainingTime={remainingTime % minuteSeconds}
         onComplete={(totalElapsedTime) => [
