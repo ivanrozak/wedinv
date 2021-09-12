@@ -46,7 +46,7 @@ export default function Countdown() {
       {console.log(data, newData)}
       <CountdownCircleTimer
         {...timerProps}
-        colors={[['#00000']]}
+        colors={[['#000000']]}
         duration={daysDuration}
         initialRemainingTime={remainingTime}
       >
@@ -56,7 +56,7 @@ export default function Countdown() {
       </CountdownCircleTimer>
       <CountdownCircleTimer
         {...timerProps}
-        colors={[['#00000']]}
+        colors={[['#000000']]}
         duration={daySeconds}
         initialRemainingTime={remainingTime % daySeconds}
         onComplete={(totalElapsedTime) => [
@@ -69,7 +69,7 @@ export default function Countdown() {
       </CountdownCircleTimer>
       <CountdownCircleTimer
         {...timerProps}
-        colors={[['#00000']]}
+        colors={[['#000000']]}
         duration={hourSeconds}
         initialRemainingTime={remainingTime % hourSeconds}
         onComplete={(totalElapsedTime) => [
@@ -82,7 +82,7 @@ export default function Countdown() {
       </CountdownCircleTimer>
       <CountdownCircleTimer
         {...timerProps}
-        colors={[['#00000']]}
+        colors={[['#000000']]}
         duration={minuteSeconds}
         initialRemainingTime={remainingTime % minuteSeconds}
         onComplete={(totalElapsedTime) => [
