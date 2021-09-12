@@ -5,7 +5,7 @@ import { FormGroup, Form, Button, Label, Input } from 'reactstrap';
 function Comments() {
   return (
     <div className='primary px-3'>
-      <div className='oleo bold f24 text-center mt-5'>Wishes & Comments</div>
+      <div className='oleo bold f24 text-center pt-5'>Wishes & Comments</div>
       <div
         className='p-3'
         style={{ border: '1px solid #8a4332', borderRadius: '10px' }}

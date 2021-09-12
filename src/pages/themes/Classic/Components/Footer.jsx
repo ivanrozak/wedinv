@@ -10,7 +10,7 @@ function Footer() {
       <img src={Logo} alt='' />
       <div className='my-3'>
         Wedding Invitation Website
-        <br /> created by Koendang.in
+        <br /> created by <strong>Koendang.in</strong>
       </div>
     </div>
   );

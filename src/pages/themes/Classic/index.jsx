@@ -82,23 +82,24 @@ function Classic() {
           <Event />
         </Fade>
       </div>
-      <div ref={galleriesRef}>
+      <div className='bg-white primary' ref={galleriesRef}>
         <Fade bottom>
-          <div className='oleo text-center f24 mt-4'>Couple Galleries</div>
+          <div className='oleo text-center f24 pt-4'>Couple Galleries</div>
           <Galleries />
+          <div className='p-2'>
+            <iframe
+              className='w-100'
+              src='https://www.youtube.com/embed/FgN4ieKQKw8'
+              title='YouTube video player'
+              frameBorder='0'
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+              allowFullscreen
+            ></iframe>
+          </div>
         </Fade>
       </div>
-      <div className='p-2'>
-        <iframe
-          className='w-100'
-          src='https://www.youtube.com/embed/FgN4ieKQKw8'
-          title='YouTube video player'
-          frameBorder='0'
-          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-          allowFullscreen
-        ></iframe>
-      </div>
-      <div ref={commentRef}>
+
+      <div className='bg-white primary' ref={commentRef}>
         <Comment />
       </div>
       <Prokes />

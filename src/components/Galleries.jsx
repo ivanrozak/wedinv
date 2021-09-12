@@ -1,8 +1,12 @@
 import React from 'react';
 import LightGallery from 'lightgallery/react';
 import './galleries.css';
-import Pic from '../assets/img/img6.jpg';
-import Pic2 from '../assets/img/img1.jpg';
+// import Pic from '../assets/img/img6.jpg';
+// import Pic2 from '../assets/img/img1.jpg';
+import Img1 from '../pages/themes/Classic/assets/img/2.jpg';
+import Img2 from '../pages/themes/Classic/assets/img/3.jpg';
+import Img3 from '../pages/themes/Classic/assets/img/4.jpg';
+import Img4 from '../pages/themes/Classic/assets/img/5.jpg';
 
 // import styles
 import 'lightgallery/css/lightgallery.css';
@@ -27,32 +31,32 @@ export default function Gallery() {
         plugins={[lgZoom, lgPager, lgFullscreen]}
         className='m-5'
       >
-        <a className='img-a' href={Pic}>
-          <img className='img-grid' src={Pic} alt='' />
+        <a className='img-a' href={Img1}>
+          <img className='img-grid' src={Img1} alt='' />
         </a>
-        <a className='img-a' href={Pic2}>
-          <img className='img-grid' src={Pic2} alt='' />
+        <a className='img-a' href={Img2}>
+          <img className='img-grid' src={Img2} alt='' />
         </a>
-        <a className='img-a' href={Pic}>
-          <img className='img-grid' src={Pic} alt='' />
+        <a className='img-a' href={Img3}>
+          <img className='img-grid' src={Img3} alt='' />
         </a>
-        <a className='img-a' href={Pic2}>
-          <img className='img-grid' src={Pic2} alt='' />
+        <a className='img-a' href={Img4}>
+          <img className='img-grid' src={Img4} alt='' />
         </a>
-        <a className='img-a' href={Pic}>
-          <img className='img-grid' src={Pic} alt='' />
+        <a className='img-a' href={Img1}>
+          <img className='img-grid' src={Img1} alt='' />
         </a>
-        <a className='img-a' href={Pic2}>
-          <img className='img-grid' src={Pic2} alt='' />
+        <a className='img-a' href={Img2}>
+          <img className='img-grid' src={Img2} alt='' />
         </a>
-        <a className='img-a' href={Pic}>
-          <img className='img-grid' src={Pic} alt='' />
+        <a className='img-a' href={Img3}>
+          <img className='img-grid' src={Img3} alt='' />
         </a>
-        <a className='img-a' href={Pic2}>
-          <img className='img-grid' src={Pic2} alt='' />
+        <a className='img-a' href={Img4}>
+          <img className='img-grid' src={Img4} alt='' />
         </a>
-        <a className='img-a' href={Pic}>
-          <img className='img-grid' src={Pic} alt='' />
+        <a className='img-a' href={Img1}>
+          <img className='img-grid' src={Img1} alt='' />
         </a>
       </LightGallery>
     </div>
