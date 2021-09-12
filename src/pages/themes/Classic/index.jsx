@@ -26,16 +26,16 @@ function Classic() {
   const galleriesRef = useRef(null);
   const commentRef = useRef(null);
   const scrollToHome = () => {
-    homeRef.current.scrollIntoView();
+    homeRef.current.scrollIntoView({ behavior: 'smooth' });
   };
   const scrollToFavourite = () => {
-    favouriteRef.current.scrollIntoView();
+    favouriteRef.current.scrollIntoView({ behavior: 'smooth' });
   };
   const scrollToGalleries = () => {
-    galleriesRef.current.scrollIntoView();
+    galleriesRef.current.scrollIntoView({ behavior: 'smooth' });
   };
   const scrollToComment = () => {
-    commentRef.current.scrollIntoView();
+    commentRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
   const playMusic = () => {
