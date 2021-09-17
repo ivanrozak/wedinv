@@ -24,12 +24,14 @@ export default function Gallery() {
     console.log('lightGallery has been initialized');
   };
   return (
-    <div className='App m-2'>
+    <div className='App'>
       <LightGallery
         onInit={onInit}
         speed={500}
         plugins={[lgZoom, lgPager, lgFullscreen]}
-        className='m-5'
+        // elementClassNames='custom-wrapper-class'
+        mode='lg-fade'
+        // className='m-5'
       >
         <a className='img-a' href={Img1}>
           <img className='img-grid' src={Img1} alt='' />

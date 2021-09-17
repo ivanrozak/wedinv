@@ -7,13 +7,13 @@ p {
 body {
   margin: 0;
 }
-/* .gallery-item {
+*/ .gallery-item {
   margin: 5px;
-} */
-.gallery-item {
-  /* width: 200px; */
-  padding: 5px;
 }
+/* .gallery-item { */
+/* width: 200px; */
+/* padding: 5px; */
+/* /* } */
 
 .lg-react-element {
   display: flex;
