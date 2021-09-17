@@ -87,6 +87,10 @@ function Classic() {
         <Fade bottom>
           <div className='oleo text-center f24 pt-4'>Couple Galleries</div>
           <Galleries />
+          <div className='p-3 text-center bold'>
+            Ini Image galleries yang baru
+          </div>
+          <LightBox />
           <div className='p-2'>
             <iframe
               className='w-100'
@@ -104,7 +108,7 @@ function Classic() {
         <Comment />
       </div>
       <Prokes />
-      <LightBox />
+
       <Footer />
       <Music props={music} />
       <Navbar />
