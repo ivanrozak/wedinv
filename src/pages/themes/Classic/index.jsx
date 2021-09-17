@@ -18,6 +18,7 @@ import Prokes from './Components/Prokes';
 import Footer from './Components/Footer';
 import './index.scss';
 import { Fade } from 'react-reveal';
+import LightBox from '../../../components/LightBox';
 
 function Classic() {
   const [music, setMusic] = useState(false);
@@ -103,6 +104,7 @@ function Classic() {
         <Comment />
       </div>
       <Prokes />
+      <LightBox />
       <Footer />
       <Music props={music} />
       <Navbar />
