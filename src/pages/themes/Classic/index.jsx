@@ -18,7 +18,8 @@ import Prokes from './Components/Prokes';
 import Footer from './Components/Footer';
 import './index.scss';
 import { Fade } from 'react-reveal';
-import LightBox from '../../../components/LightBox';
+// import LightBox from '../../../components/LightBox';
+// import CommentNew from './Components/CommentNew';
 
 function Classic() {
   const [music, setMusic] = useState(false);
@@ -87,11 +88,11 @@ function Classic() {
         <Fade bottom>
           <div className='oleo text-center f24 pt-4'>Couple Galleries</div>
           <Galleries />
-          <div className='p-3 text-center bold'>
+          {/* <div className='p-3 text-center bold'>
             Ini Image galleries yang baru
           </div>
-          <LightBox />
-          <div className='p-2'>
+          <LightBox /> */}
+          <div className='p-4'>
             <iframe
               className='w-100'
               src='https://www.youtube.com/embed/FgN4ieKQKw8'
@@ -107,6 +108,7 @@ function Classic() {
       <div className='bg-white primary' ref={commentRef}>
         <Comment />
       </div>
+      {/* <CommentNew /> */}
       <Prokes />
 
       <Footer />
